@@ -312,10 +312,10 @@ exit;
 								?>	
 								<div class="col-sm-9">
 									<select	 class="form-control" name="idfactura" id="idfactura" >
-									<option value="" >Seleccione</option>
+									<option value="" >ID Factura&nbsp;&nbsp; - &nbsp;&nbsp;N° Factura</option>
 									<?php 
 										while ( $row = $result->fetch_array() ) {?>
-										<option value=" <?php echo $row['ID_FACT'] ?> " ><?php echo $row['ID_FACT']; ?>&nbsp;&nbsp;&nbsp;<?php echo $row['NFACT']; ?> </option>
+										<option value=" <?php echo $row['ID_FACT'] ?> " >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $row['ID_FACT']; ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $row['NFACT']; ?> </option>
 										<?php
 										}?>
 									</select>
